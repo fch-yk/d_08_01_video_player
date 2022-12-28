@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Пример подключения плеера</title>
+  <title>Player example</title>
   <meta charset="utf-8">
 </head>
 <body>
+  <p>
+    <small>
+      <small>small</small>
+    </small>
+  </p>
   <div id="player" style="width: 800px; height: 600px;">
     <div class="js-video-container" style="width: 100%; height: 100%"></div>
     <!-- Here can be placed player controls: play and volume buttons -->
+    <button type="submit">Play!</button>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
   <script src="player.js"></script>
 
-  <script type="text/javascript">
+  <script>
     createPlayer({elementId: 'player'});
   </script>
 
