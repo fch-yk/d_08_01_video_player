@@ -2,17 +2,37 @@
 <html lang="en">
 <head>
   <title>Player example</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
   <meta charset="utf-8">
   <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  <style>
+    .player {
+      width: 800px;
+      height: 600px;
+    }
+    .player .video-container {
+      width: 100%;
+      height: 100%;
+    }
+    .player .player-buttons {
+      background-color: black;
+    }
+    .player .player-buttons .player-button {
+      border: none;
+      cursor: pointer;
+      color: white;
+      background-color: transparent;
+    }
+  </style>
 </head>
 <body>
-  <div id="player" style="width: 800px; height: 600px;">
-    <div class="js-video-container" style="width: 100%; height: 100%"></div>
-    <div style="background-color: black;">
-      <button class="js-play-button" type="button" style="border: none; cursor: pointer; color: white; background-color: transparent;">
+  <div class="player" id="player">
+    <div class="js-video-container video-container"></div>
+    <div class="player-buttons">
+      <button class="js-play-button player-button" type="button">
         <i class="fa fa-play"></i>
       </button>
-      <button class="js-pause-button" type="button" style="border: none; cursor: pointer; color: white; background-color: transparent;">
+      <button class="js-pause-button player-button" type="button">
         <i class="fa fa-pause"></i>
       </button>
     </div>
