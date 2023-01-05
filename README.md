@@ -4,6 +4,8 @@
 - [This JS library](https://github.com/devmanorg/video-player-jslib) was used.
 - You can find the resulting website [here](https://fch-yk.github.io/d_08_01_video_player/).
 
+![player image](./screenshots/player.png)
+
 ## Deploying website
 
 ### Prerequisites
