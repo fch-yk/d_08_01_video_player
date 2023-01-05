@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="player-html" lang="en">
+
 <head>
   <title>Player example</title>
   <link rel="icon" type="image/x-icon" href="./favicon.ico">
@@ -17,13 +18,16 @@
       display: flex;
       flex-direction: column;
     }
+
     .player .video-container {
       flex-grow: 1;
     }
+
     .player .player-buttons {
       background-color: black;
       display: flex;
     }
+
     .player .player-buttons .player-button {
       border: none;
       cursor: pointer;
@@ -35,17 +39,21 @@
       width: 40px;
       margin: 3px;
     }
+
     .player .player-buttons .span {
-      flex-grow:1;
+      flex-grow: 1;
     }
+
     .player-body {
       height: 100%;
     }
+
     .player-html {
       height: 100%;
     }
   </style>
 </head>
+
 <body class="player-body">
   <div class="player" id="player">
     <div class="js-video-container video-container"></div>
@@ -57,10 +65,10 @@
         <i class="fa fa-pause"></i>
       </button>
       <button class="js-volume-button player-button" type="button">
-        <i class="fa fa-volume-up" aria-hidden="true"></i>
+        <i class="fa fa-volume-off" aria-hidden="true"></i>
       </button>
       <button class="js-mute-button player-button" type="button">
-        <i class="fa fa-volume-off" aria-hidden="true"></i>
+        <i class="fa fa-volume-up" aria-hidden="true"></i>
       </button>
       <div class="span">
       </div>
@@ -76,8 +84,9 @@
   <script src="player.js"></script>
 
   <script>
-    createPlayer({elementId: 'player'});
+    createPlayer({ elementId: 'player' });
   </script>
 
 </body>
+
 </html>
