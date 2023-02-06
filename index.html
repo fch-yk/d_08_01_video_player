@@ -63,10 +63,20 @@
 
     .player .control-panel .time-box .progress-bar{
       flex-grow: 1;
+      background-color: black;
+      margin-right: 15px;
     }
 
     .player .control-panel .time-box .current-time{
       margin-left: 2px;
+    }
+
+    .player .control-panel .time-box .progress-bar .slider{
+      background-color: red;
+      height: 5px;
+      border-radius: 30px;
+      margin-top: 5px;
+      margin-left: 10px;
     }
 
     .player .control-panel .time-box .duration{
@@ -101,8 +111,8 @@
       <div class="time-box">
         <span class="js-current-time current-time"></span>
         <div class="progress-bar">
-          <div class="js-progress" style="background-color: grey;">
-            <div class="js-progress-slider" style="background-color: red;">Progress</div>
+          <div class="js-progress">
+            <div class="js-progress-slider slider"></div>
           </div>
         </div>
         <span class="js-duration duration"></span>
