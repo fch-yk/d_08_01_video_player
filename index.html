@@ -24,12 +24,13 @@
       flex-grow: 1;
     }
 
-    .player .player-buttons {
+    .player .control-panel {
       background-color: black;
       display: flex;
+      align-items: center;
     }
 
-    .player .player-buttons .player-button {
+    .player .control-panel .player-button {
       border: none;
       cursor: pointer;
       color: white;
@@ -40,36 +41,50 @@
       width: 35px;
       }
 
-    .player .player-buttons .player-button .on-off-icon{
+    .player .control-panel .player-button .on-off-icon{
       margin-left: -2px
     }
 
 
-  .player .player-buttons .player-button .volume-icon{
-    margin-top: 1px
-  }
+    .player .control-panel .player-button .volume-icon{
+      margin-top: 1px
+    }
 
-  .player .player-buttons .player-button .expand-icon{
-    margin-left: -8px
-  }
+    .player .control-panel .player-button .expand-icon{
+      margin-left: -8px
+    }
 
-  .player .player-buttons .time-box{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-  }
+    .player .control-panel .time-box{
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      flex-grow: 1;
+      display: flex;
+    }
 
-
-
-    .player .player-buttons .spacer {
+    .player .control-panel .time-box .progress-bar{
       flex-grow: 1;
     }
+
+    .player .control-panel .time-box .current-time{
+      margin-left: 2px;
+    }
+
+    .player .control-panel .time-box .duration{
+      margin-right: 4px;
+    }
+
+
+
+
   </style>
 </head>
 
 <body>
   <div class="player" id="player">
+
     <div class="js-video-container video-container"></div>
-    <div class="player-buttons">
+
+    <div class="control-panel">
       <button class="js-play-button player-button" type="button">
         <i class="fa fa-play on-off-icon"></i>
       </button>
@@ -82,16 +97,17 @@
       <button class="js-volume-button player-button" type="button">
         <i class="fa fa-volume-off volume-icon" aria-hidden="true"></i>
       </button>
+
       <div class="time-box">
-        <span class="js-current-time"></span>
-        —
-        <span class="js-duration"></span>
+        <span class="js-current-time current-time"></span>
+        <div class="progress-bar"></div>
+        <span class="js-duration duration"></span>
       </div>
-      <div class="spacer">
-      </div>
+
       <button class="js-fullscreen-button  player-button" type="button">
         <i class="fa fa-expand expand-icon" aria-hidden="true"></i>
       </button>
+
     </div>
   </div>
 
