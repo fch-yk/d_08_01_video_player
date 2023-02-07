@@ -59,11 +59,14 @@
       font-family: 'Roboto', sans-serif;
       flex-grow: 1;
       display: flex;
+      align-items: center;
     }
 
     .player .control-panel .time-box .progress-bar{
       flex-grow: 1;
       background-color: black;
+      display: flex;
+      align-items: center;
       margin-right: 15px;
     }
 
@@ -118,14 +121,14 @@
 
       <div class="time-box">
         <span class="js-current-time current-time"></span>
-        <div class="progress-bar">
-          <div class="js-progress">
+
+          <div class="js-progress progress-bar">
             <div class="js-progress-slider slider"></div>
+            <span class="thumb"></span>
           </div>
-        </div>
+
         <span class="js-duration duration"></span>
       </div>
-      <span class="thumb"></span>
 
       <button class="js-fullscreen-button  player-button" type="button">
         <i class="fa fa-expand expand-icon" aria-hidden="true"></i>
