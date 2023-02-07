@@ -62,31 +62,28 @@
       align-items: center;
     }
 
+    .player .control-panel .time-box .current-time{
+      margin-left: 2px;
+    }
+
     .player .control-panel .time-box .progress-bar{
       flex-grow: 1;
       background-color: black;
       display: flex;
       align-items: center;
       margin-right: 15px;
+      margin-top: -1px;
     }
 
-    .player .control-panel .time-box .current-time{
-      margin-left: 2px;
-    }
 
     .player .control-panel .time-box .progress-bar .slider{
       background-color: red;
       height: 5px;
       border-radius: 30px;
-      margin-top: 5px;
       margin-left: 10px;
     }
 
-    .player .control-panel .time-box .duration{
-      margin-right: 4px;
-    }
-
-    .player .control-panel .thumb{
+    .player .control-panel .time-box .progress-bar .thumb{
       height: 8px;
       width: 8px;
       background-color: red;
@@ -94,7 +91,13 @@
       display: inline-block;
       border: 3px solid white;
       box-shadow: 0.5px 0.5px grey;
+      margin-left: -8px;
     }
+
+    .player .control-panel .time-box .duration{
+      margin-right: 4px;
+    }
+
 
 
   </style>
