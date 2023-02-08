@@ -6,6 +6,7 @@ tmp*.*
 *.code-workspace
 media/
 flex_tutorial/
+layouts/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
