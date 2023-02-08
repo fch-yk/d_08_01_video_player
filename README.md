@@ -6,13 +6,13 @@
 
 ![player image](./screenshots/player.png)
 
-## Deploying website
+## Website deploy
 
 ### Prerequisites
 
 Python 3.11 is required.
 
-### Installing
+### Installation
 
 - Download the project files.
 - It is recommended to use [venv](https://docs.python.org/3/library/venv.html?highlight=venv#module-venv) for project isolation.
@@ -22,7 +22,7 @@ Python 3.11 is required.
 pip install -r requirements.txt
 ```
 
-### Using
+### Usage
 
 - Run:
 
